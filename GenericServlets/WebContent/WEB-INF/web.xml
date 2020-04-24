@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <display-name>GenericServlets</display-name>
+  <welcome-file-list>
+    <welcome-file>welcome.html</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+  	<servlet-name>generic1</servlet-name>
+  	<servlet-class>test.GenericDemo1</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>generic1</servlet-name>
+  	<url-pattern>/displaypage</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>generic2</servlet-name>
+  	<servlet-class>test.GenericDemo2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>generic2</servlet-name>
+  	<url-pattern>/datelink</url-pattern>
+  </servlet-mapping>
+</web-app>
