@@ -1,0 +1,18 @@
+@charset "ISO-8859-1";
+
+h1
+{
+	color:red;
+	border:5px solid black;
+}
+
+form
+{
+	background-color: orange;
+	padding: 20px;
+}
+
+input
+{
+	font-size: 20px;
+}
