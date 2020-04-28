@@ -34,4 +34,32 @@
   	<servlet-name>http3</servlet-name>
   	<url-pattern>/additionlink</url-pattern>
   </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>http4</servlet-name>
+  	<servlet-class>test.HttpDemo4</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>http4</servlet-name>
+  	<url-pattern>/checklink</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>http5</servlet-name>
+  	<servlet-class>test.HttpDemo5</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>http5</servlet-name>
+  	<url-pattern>/demolink</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>http6</servlet-name>
+  	<servlet-class>test.HttpDemo6</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>http6</servlet-name>
+  	<url-pattern>/getbill</url-pattern>
+  </servlet-mapping>
 </web-app>
