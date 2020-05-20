@@ -25,6 +25,8 @@
 
 		<!-- ADD MAPPING FILE -->
         <mapping resource="cfgs/product.hbm.xml"/>
+        
+        <mapping resource="cfgs/employee.hbm.xml"/>
 
     </session-factory>
 

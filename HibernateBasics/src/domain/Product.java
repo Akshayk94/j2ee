@@ -9,6 +9,8 @@ public class Product
 	private double productPrice;
 	private String productCategory;
 	
+	//default constructor or zero parameter constructor
+	
 	public int getProductId() 
 	{
 		return productId;
@@ -48,6 +50,5 @@ public class Product
 	{
 		this.productCategory = productCategory;
 	}
-	
 	
 }
