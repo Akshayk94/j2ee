@@ -54,4 +54,5 @@ public class Person //CHILD TABLE
 	{
 		this.passportRef = passportRef;
 	}
+	
 }
