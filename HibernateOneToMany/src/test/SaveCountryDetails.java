@@ -31,12 +31,11 @@ public class SaveCountryDetails
 		
 		//load the country from database table
 		
-		CountryDetails c2=ses.load(CountryDetails.class, 1);
-		CountryDetails c1=ses.load(CountryDetails.class, 3);
+		CountryDetails c1=ses.load(CountryDetails.class, 1);
 		
 		//create objects of city class
 		City ct1=new City();
-		ct1.setCityName("LONDON");
+		ct1.setCityName("DELHI");
 		
 		City ct2=new City();
 		ct2.setCityName("PUNE");
