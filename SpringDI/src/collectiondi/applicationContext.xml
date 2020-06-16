@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+	
+    <!-- Define your beans here -->
+    
+    <!-- Configure objects of Order class -->
+	<bean id="order1" class="collectiondi.Order">
+		<property name="orderId" value="1"></property>
+		<property name="orderNumber" value="ORD1258"></property>
+	</bean>
+	
+	<bean id="order2" class="collectiondi.Order">
+		<property name="orderId" value="2"></property>
+		<property name="orderNumber" value="ORD4589"></property>
+	</bean>
+	
+	<bean id="order3" class="collectiondi.Order">
+		<property name="orderId" value="3"></property>
+		<property name="orderNumber" value="ORD2596"></property>
+	</bean>
+	
+	
+	
+	<!-- Configure objects of Cards class -->
+	<bean id="card1" class="collectiondi.Cards">
+		<property name="cardType" value="CREDIT CARD"></property>
+		<property name="cardNumber" value="1258965"></property>
+	</bean>
+	
+	<bean id="card2" class="collectiondi.Cards">
+		<property name="cardType" value="DEBIT CARD"></property>
+		<property name="cardNumber" value="5963225"></property>
+	</bean>
+	
+	
+	
+	<!-- Configure customer class object -->
+	
+	<bean id="customer1" class="collectiondi.Customer">
+		<property name="customerId" value="201"></property>
+		<property name="customerName" value="DINESH"></property>
+		<property name="orderlist">
+			<list>
+				<ref bean="order1"/>
+				<ref bean="order2"/>
+				<ref bean="order3"/>
+				<ref bean="order3"/>
+			</list>
+		</property>
+		
+		<property name="cardlist">
+			<list>
+				<ref bean="card1"/>
+				<ref bean="card2"/>
+			</list>
+		</property>
+	</bean>
+</beans>
+
+
+
+
+
