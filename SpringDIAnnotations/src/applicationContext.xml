@@ -12,7 +12,8 @@
     
     <context:component-scan base-package="demo.spring.ci"></context:component-scan>
     
-    
+    <context:component-scan base-package="demo.spring.si"></context:component-scan>
+
 </beans>
 
 
