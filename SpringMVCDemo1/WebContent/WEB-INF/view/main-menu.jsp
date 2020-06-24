@@ -9,6 +9,10 @@
 <body>
 	<h1>Welcome to Spring MVC Application</h1>
 	<hr>
-	<a href="getuserform">USER FORM</a>
+	<a href="getuserform">USER FORM</a><br><br><br>
+	
+	<a href="getstudentform">STUDENT FORM</a><br><br>
+	
+	<a href="getcustomerform">CUSTOMER FORM</a>
 </body>
 </html>
