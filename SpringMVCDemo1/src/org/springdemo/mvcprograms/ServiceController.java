@@ -7,6 +7,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class ServiceController 
@@ -90,4 +91,30 @@ public class ServiceController
 		return "customer-confirmation";
 	}
 	
+	
+	//method to display employee form
+	@GetMapping("/getemployeeform")
+	public String displayEmployeeForm()
+	{
+		return "employee-form";
+	}
+	
+	//method to process employee form
+	@PostMapping("/employeelink")
+	public String processEmployeeForm(@RequestParam("empname") String employeeName,
+									@RequestParam("salary") double empsalary, Model themodel)
+	{
+		double updatedSalary=empsalary+10000;
+		
+		String message="Welcome "+employeeName;
+		String data="Your Updated Salary is "+updatedSalary;
+		
+		themodel.addAttribute("msg1", message);
+		themodel.addAttribute("msg2", data);
+		
+		
+		return "employee-confirmation";
+	}
+	
+
 }

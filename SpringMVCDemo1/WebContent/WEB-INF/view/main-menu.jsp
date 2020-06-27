@@ -13,6 +13,8 @@
 	
 	<a href="getstudentform">STUDENT FORM</a><br><br>
 	
-	<a href="getcustomerform">CUSTOMER FORM</a>
+	<a href="getcustomerform">CUSTOMER FORM</a><br><br>
+	
+	<a href="getemployeeform">EMPLOYEE FORM</a>
 </body>
 </html>
