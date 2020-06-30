@@ -11,6 +11,8 @@
 	
 	<hr>
 	
-	<a href="getregistrationform">STUDENT REGISTRATION</a>
+	<a href="getregistrationform">STUDENT REGISTRATION</a><br><br>
+
+	<a href="getcustomerform">CUSTOMER REGISTRATION</a>
 </body>
 </html>
